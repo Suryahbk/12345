@@ -6,7 +6,7 @@ interface LoginComponentState {
     emailError: boolean,
     password: string,
     passwordError: boolean
-}
+};
 
 function Login() {
 
@@ -56,6 +56,7 @@ function Login() {
                             <Grid item xs={10}>
                                 <TextField
                                     fullWidth
+                                    required
                                     label="Email"
                                     variant="standard"
                                     value={state.email}
